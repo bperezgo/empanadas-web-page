@@ -1,1 +1,1 @@
-export const fakeNextRequest = {}
+export const fakeNextRequest = {};
