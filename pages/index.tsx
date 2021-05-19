@@ -1,7 +1,12 @@
-import React from "react"
+import React from 'react';
+import { Hero } from '@components/Hero';
+import { ProductList } from '@components/ProductList';
 
 const Home = () => (
-    <div>Empanaditas la negrita</div>
-)
+  <>
+    <Hero />
+    <ProductList />
+  </>
+);
 
-export default Home
+export default Home;
