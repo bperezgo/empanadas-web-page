@@ -1,6 +1,7 @@
 {
   "extends": ["tslint-config-airbnb", "tslint-react-hooks"],
   "rules": {
+    "ter-arrow-parens": [true],
     "import-name": false,
     "align": false,
     "function-name": [

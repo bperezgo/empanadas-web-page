@@ -1,0 +1,9 @@
+.Hero {
+  height: 265px;
+  max-width: 100%;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+  }
+}
