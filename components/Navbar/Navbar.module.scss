@@ -5,8 +5,12 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  font-size:larger;
+  font-size: 2em;
   color: azure;
-  background-color: #CF7F35;
+  background: linear-gradient(rgba(207, 127, 53, 1), rgba(207, 127, 53, 0.7));
   height: 40px;
+  & svg {
+    -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
