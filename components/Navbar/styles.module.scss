@@ -2,15 +2,52 @@
   position: absolute;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
   font-size: 2em;
   color: azure;
   background: linear-gradient(rgba(207, 127, 53, 1), rgba(207, 127, 53, 0.7));
-  height: 40px;
   & svg {
     -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   }
+}
+
+.Navbar__height_collapsed {
+  height: 40px
+}
+
+// ToDo: height extended like a variable
+.Navbar__height_extended {
+  height: 265px;
+}
+
+.Navbar__image_extended {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0 0;
+  width: 85%;
+  height: 65%;
+}
+
+.Navbar__contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 85%;
+  height: 10%;
+  & p {
+    font-size: 0.5em;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.Navbar__menu_icon {
+  display: flex;
+  position: relative;
+  margin: auto auto;
 }
