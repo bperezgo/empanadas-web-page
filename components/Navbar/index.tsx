@@ -1,5 +1,5 @@
 import { BiMenu } from 'react-icons/bi';
-import styles from './Navbar.module.scss';
+import styles from './styles.module.scss';
 
 export const Navbar = () => {
   return (

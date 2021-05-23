@@ -1,4 +1,4 @@
-import styles from './Product.module.scss';
+import styles from './styles.module.scss';
 import { ProductImage } from '../ProductImage';
 import { ProductDescription } from '../ProductDescription';
 
