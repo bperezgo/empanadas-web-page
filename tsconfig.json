@@ -43,10 +43,10 @@
         "types/*"
       ],
       "@components/*": [
-        "components/*"
+        "src/components/*"
       ],
       "@cors": [
-        "cors-middleware.ts"
+        "src/cors-middleware.ts"
       ],
       "@styles/*": [
         "styles/*"
