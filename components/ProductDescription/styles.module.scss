@@ -1,4 +1,25 @@
 .ProductDescription {
   grid-column-start: 3;
   grid-column-end: 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductDescription__title {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.2em
+}
+
+.ProductDescription__description {
+  font-size: 0.8em;
+}
+
+.ProductDescription__price {
+  display: flex;
+  position: relative;
+  margin-top: auto;
+  bottom: 1.3em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
