@@ -29,6 +29,7 @@
         "multiline": {
           "objects": "always",
           "arrays": "always",
+          "imports": "always",
           "functions": "never",
           "typeLiterals": "ignore"
         }
