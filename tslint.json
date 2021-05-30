@@ -28,7 +28,7 @@
         "singleline": "never",
         "multiline": {
           "objects": "always",
-          "arrays": "never",
+          "arrays": "always",
           "functions": "never",
           "typeLiterals": "ignore"
         }

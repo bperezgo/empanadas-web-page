@@ -1,0 +1,65 @@
+.WpBtn__img_container {
+  display: flex;
+  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  bottom: 2em;
+  right: 2em;
+}
+
+.WpBtn__img_container > img {
+  height: 100px;
+  width: 100%;
+}
+
+.WpBtn {
+  height: 4em;
+  width: 100%;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.WpBtn__animation {
+  transition: transform 400ms;
+  transform-origin: 50% 100%;
+  animation: TinTin 1s;
+  animation-delay: 1000ms;
+}
+
+@keyframes TinTin {
+  0% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+  10% {
+    transform: scale(1, 0.7) translateY(0) rotate(0deg);
+  }
+  20% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(30deg);
+  }
+  40% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(-30deg);
+  }
+  50% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(25deg);
+  }
+  55% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(-20deg);
+  }
+  65% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(10deg);
+  }
+  75% {
+    transform: scale(1, 1) translateY(-2.5em) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+  90% {
+    transform: scale(1, 0.7) translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0) rotate(0deg);
+  }
+}

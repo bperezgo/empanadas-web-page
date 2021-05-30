@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <link rel="shortcut icon" href="/assets/negrita-log.png" />
+          <link rel="shortcut icon" href="/assets/negrita-logo.png" />
         </Head>
         <body>
           <Main />

@@ -8,11 +8,15 @@ type NavbarProps = {
 };
 
 export const Navbar = ({ isActive }: NavbarProps) => {
-  const containerStyles = `${styles.Navbar} ${
-    isActive ? styles.Navbar__height_extended : styles.Navbar__height_collapsed
-  }`;
   return (
-    <div className={containerStyles}>
+    <div
+      className={[
+        styles.Navbar,
+        isActive
+          ? styles.Navbar__height_extended
+          : styles.Navbar__height_collapsed,
+      ].join(' ')}
+    >
       {isActive && (
         <>
           <div className={styles.Navbar__image_extended}>
