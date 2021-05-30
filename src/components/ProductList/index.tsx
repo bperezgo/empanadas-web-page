@@ -1,10 +1,14 @@
 import styles from './styles.module.scss';
 import { Product } from '../Product';
 
-export const ProductList = () => (
+type ProductListProps = {
+  products: TProduct[];
+};
+
+export const ProductList = ({ products = [] }: ProductListProps) => (
   <div className={styles.ProductList}>
-    {[1, 2, 3, 4, 5, 6].map((key) => (
-      <Product key={key} />
+    {products.map(({ id }) => (
+      <Product key={id} />
     ))}
   </div>
 );

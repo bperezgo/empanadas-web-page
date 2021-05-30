@@ -3,10 +3,14 @@ import { ProductList } from '../components/ProductList';
 import { WhatsappButton } from '../components/WhatsappButton';
 import { Footer } from '../components/Footer';
 
-const Home = () => (
+type HomePageType = {
+  products?: TProduct[];
+};
+
+const HomePage = ({ products = [] }: HomePageType) => (
   <>
     <Hero />
-    <ProductList />
+    <ProductList products={products} />
     <WhatsappButton
       redirectUrl={`https://wa.me/${process.env.prefixInternationalNumber}${process.env.wpBtnNumber}`}
     />
@@ -14,4 +18,4 @@ const Home = () => (
   </>
 );
 
-export default Home;
+export default HomePage;
