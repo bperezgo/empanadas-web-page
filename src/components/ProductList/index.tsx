@@ -7,7 +7,7 @@ type ProductListProps = {
 
 export const ProductList = ({ products = [] }: ProductListProps) => (
   <div className={styles.ProductList}>
-    {products.map(({ id }) => (
+    {[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }].map(({ id }) => (
       <Product key={id} />
     ))}
   </div>
