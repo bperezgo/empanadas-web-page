@@ -1,3 +1,4 @@
+import { ForwardedRef, forwardRef } from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { AiOutlineCaretUp } from 'react-icons/ai';
 import Image from 'next/image';
@@ -7,14 +8,12 @@ type NavbarProps = {
   isActive: boolean;
 };
 
-export const Navbar = ({ isActive }: NavbarProps) => {
-  return (
+export const Navbar = forwardRef(
+  ({ isActive }: NavbarProps, navRef: ForwardedRef<HTMLDivElement | null>) => (
     <div
+      ref={navRef}
       className={[
         styles.Navbar,
-        isActive
-          ? styles.Navbar__height_extended
-          : styles.Navbar__height_collapsed,
       ].join(' ')}
     >
       {isActive && (
@@ -36,5 +35,5 @@ export const Navbar = ({ isActive }: NavbarProps) => {
         {isActive ? <AiOutlineCaretUp /> : <BiMenu />}
       </div>
     </div>
-  );
-};
+  )
+);

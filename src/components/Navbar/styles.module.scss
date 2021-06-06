@@ -15,13 +15,25 @@
   }
 }
 
+// .Navbar__expanded {
+//   animation: slide-in 300ms;
+//   animation-fill-mode: forwards;
+// }
+
+// .Navbar__collapsed {
+//   animation: slide-in 300ms;
+//   animation-fill-mode: reverse;
+// }
+
 .Navbar__height_collapsed {
-  height: 40px
+  // height: 40px;
+  margin-top: 40px;
 }
 
 // ToDo: height extended like a variable
 .Navbar__height_extended {
-  height: 265px;
+  // height: 265px;
+  margin-top: 265px;
 }
 
 .Navbar__image_extended {
@@ -51,3 +63,27 @@
   position: relative;
   margin: auto auto;
 }
+
+// @-webkit-keyframes slide-in {
+//   from {
+//     height: 40px;
+//     border-radius: 0px;
+//   }
+
+//   to {
+//     height: 265px;
+//     border-radius: 16px;
+//   }
+// }
+
+// @keyframes slide-in {
+//   from {
+//     height: 40px;
+//     border-radius: 0px;
+//   }
+
+//   to {
+//     height: 265px;
+//     border-radius: 0px 0px 16px 16px;
+//   }
+// }
