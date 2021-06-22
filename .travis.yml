@@ -1,45 +1,33 @@
 language: node_js
 node_js:
-  - '14.16.1'
+  - "14.16.1"
 cache:
+  yarn: true
   directories:
     - node_modules
     - ~/.npm
 git:
   depth: 3
-branches:
-  only:
-    - master
-install:
-  - yarn install
-script:
-  - yarn test
-  - yarn build
-  - yarn start
+notifications:
   email:
     recipients:
       - quantumursua@gmail.com
     on_success: always
     on_failure: always
-after_script:
-  -yarn clean
-# jobs:
-#   include:
-#     - stage: test
-#       script: yarn test
-#       script: yarn eslint
-#     - stage: deploy
-#       script: yarn deploy
+branches:
+  only:
+    - master
+script:
+  - yarn test
+  - yarn build
 deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  local-dir: dist/
+  local-dir: .next  
   app: empanadas-web-page
   commit_message: "build: project deployment"
-  api_key:
-    secure: $HEROKU_TOKEN
-  on
-    repo: bperezgo/empanadas-web-page
+  api_key: $HEROKU_TOKEN
+  on: master
 after_deploy:
   - echo "Application Deployed!"
